@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		302FABD824AF87F900F5222A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABD724AF87F900F5222A /* AppDelegate.swift */; };
+		302FABDC24AF87F900F5222A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABDB24AF87F900F5222A /* ViewController.swift */; };
+		302FABDF24AF87F900F5222A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302FABDD24AF87F900F5222A /* Main.storyboard */; };
+		302FABE224AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 302FABE024AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodeld */; };
+		302FABE424AF87FA00F5222A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 302FABE324AF87FA00F5222A /* Assets.xcassets */; };
+		302FABE724AF87FA00F5222A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302FABE524AF87FA00F5222A /* LaunchScreen.storyboard */; };
+		302FABF224AF87FA00F5222A /* Heady_Ecommerce_Demo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABF124AF87FA00F5222A /* Heady_Ecommerce_Demo_AppTests.swift */; };
+		302FABFD24AF87FA00F5222A /* Heady_Ecommerce_Demo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABFC24AF87FA00F5222A /* Heady_Ecommerce_Demo_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		302FABEE24AF87FA00F5222A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 302FABCC24AF87F900F5222A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 302FABD324AF87F900F5222A;
+			remoteInfo = "Heady Ecommerce Demo App";
+		};
+		302FABF924AF87FA00F5222A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 302FABCC24AF87F900F5222A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 302FABD324AF87F900F5222A;
+			remoteInfo = "Heady Ecommerce Demo App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		302FABD424AF87F900F5222A /* Heady Ecommerce Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heady Ecommerce Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		302FABD724AF87F900F5222A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		302FABDB24AF87F900F5222A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		302FABDE24AF87F900F5222A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		302FABE124AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Heady_Ecommerce_Demo_App.xcdatamodel; sourceTree = "<group>"; };
+		302FABE324AF87FA00F5222A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		302FABE624AF87FA00F5222A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		302FABE824AF87FA00F5222A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		302FABED24AF87FA00F5222A /* Heady Ecommerce Demo AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heady Ecommerce Demo AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		302FABF124AF87FA00F5222A /* Heady_Ecommerce_Demo_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heady_Ecommerce_Demo_AppTests.swift; sourceTree = "<group>"; };
+		302FABF324AF87FA00F5222A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		302FABF824AF87FA00F5222A /* Heady Ecommerce Demo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heady Ecommerce Demo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		302FABFC24AF87FA00F5222A /* Heady_Ecommerce_Demo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heady_Ecommerce_Demo_AppUITests.swift; sourceTree = "<group>"; };
+		302FABFE24AF87FA00F5222A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		302FABD124AF87F900F5222A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302FABEA24AF87FA00F5222A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302FABF524AF87FA00F5222A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		302FABCB24AF87F900F5222A = {
+			isa = PBXGroup;
+			children = (
+				302FABD624AF87F900F5222A /* Heady Ecommerce Demo App */,
+				302FABF024AF87FA00F5222A /* Heady Ecommerce Demo AppTests */,
+				302FABFB24AF87FA00F5222A /* Heady Ecommerce Demo AppUITests */,
+				302FABD524AF87F900F5222A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		302FABD524AF87F900F5222A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				302FABD424AF87F900F5222A /* Heady Ecommerce Demo App.app */,
+				302FABED24AF87FA00F5222A /* Heady Ecommerce Demo AppTests.xctest */,
+				302FABF824AF87FA00F5222A /* Heady Ecommerce Demo AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		302FABD624AF87F900F5222A /* Heady Ecommerce Demo App */ = {
+			isa = PBXGroup;
+			children = (
+				302FABD724AF87F900F5222A /* AppDelegate.swift */,
+				302FABDB24AF87F900F5222A /* ViewController.swift */,
+				302FABDD24AF87F900F5222A /* Main.storyboard */,
+				302FABE324AF87FA00F5222A /* Assets.xcassets */,
+				302FABE524AF87FA00F5222A /* LaunchScreen.storyboard */,
+				302FABE824AF87FA00F5222A /* Info.plist */,
+				302FABE024AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodeld */,
+			);
+			path = "Heady Ecommerce Demo App";
+			sourceTree = "<group>";
+		};
+		302FABF024AF87FA00F5222A /* Heady Ecommerce Demo AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				302FABF124AF87FA00F5222A /* Heady_Ecommerce_Demo_AppTests.swift */,
+				302FABF324AF87FA00F5222A /* Info.plist */,
+			);
+			path = "Heady Ecommerce Demo AppTests";
+			sourceTree = "<group>";
+		};
+		302FABFB24AF87FA00F5222A /* Heady Ecommerce Demo AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				302FABFC24AF87FA00F5222A /* Heady_Ecommerce_Demo_AppUITests.swift */,
+				302FABFE24AF87FA00F5222A /* Info.plist */,
+			);
+			path = "Heady Ecommerce Demo AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		302FABD324AF87F900F5222A /* Heady Ecommerce Demo App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 302FAC0124AF87FA00F5222A /* Build configuration list for PBXNativeTarget "Heady Ecommerce Demo App" */;
+			buildPhases = (
+				302FABD024AF87F900F5222A /* Sources */,
+				302FABD124AF87F900F5222A /* Frameworks */,
+				302FABD224AF87F900F5222A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heady Ecommerce Demo App";
+			productName = "Heady Ecommerce Demo App";
+			productReference = 302FABD424AF87F900F5222A /* Heady Ecommerce Demo App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		302FABEC24AF87FA00F5222A /* Heady Ecommerce Demo AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 302FAC0424AF87FA00F5222A /* Build configuration list for PBXNativeTarget "Heady Ecommerce Demo AppTests" */;
+			buildPhases = (
+				302FABE924AF87FA00F5222A /* Sources */,
+				302FABEA24AF87FA00F5222A /* Frameworks */,
+				302FABEB24AF87FA00F5222A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				302FABEF24AF87FA00F5222A /* PBXTargetDependency */,
+			);
+			name = "Heady Ecommerce Demo AppTests";
+			productName = "Heady Ecommerce Demo AppTests";
+			productReference = 302FABED24AF87FA00F5222A /* Heady Ecommerce Demo AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		302FABF724AF87FA00F5222A /* Heady Ecommerce Demo AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 302FAC0724AF87FA00F5222A /* Build configuration list for PBXNativeTarget "Heady Ecommerce Demo AppUITests" */;
+			buildPhases = (
+				302FABF424AF87FA00F5222A /* Sources */,
+				302FABF524AF87FA00F5222A /* Frameworks */,
+				302FABF624AF87FA00F5222A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				302FABFA24AF87FA00F5222A /* PBXTargetDependency */,
+			);
+			name = "Heady Ecommerce Demo AppUITests";
+			productName = "Heady Ecommerce Demo AppUITests";
+			productReference = 302FABF824AF87FA00F5222A /* Heady Ecommerce Demo AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		302FABCC24AF87F900F5222A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Saumya Verma";
+				TargetAttributes = {
+					302FABD324AF87F900F5222A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					302FABEC24AF87FA00F5222A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 302FABD324AF87F900F5222A;
+					};
+					302FABF724AF87FA00F5222A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 302FABD324AF87F900F5222A;
+					};
+				};
+			};
+			buildConfigurationList = 302FABCF24AF87F900F5222A /* Build configuration list for PBXProject "Heady Ecommerce Demo App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 302FABCB24AF87F900F5222A;
+			productRefGroup = 302FABD524AF87F900F5222A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				302FABD324AF87F900F5222A /* Heady Ecommerce Demo App */,
+				302FABEC24AF87FA00F5222A /* Heady Ecommerce Demo AppTests */,
+				302FABF724AF87FA00F5222A /* Heady Ecommerce Demo AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		302FABD224AF87F900F5222A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302FABE724AF87FA00F5222A /* LaunchScreen.storyboard in Resources */,
+				302FABE424AF87FA00F5222A /* Assets.xcassets in Resources */,
+				302FABDF24AF87F900F5222A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302FABEB24AF87FA00F5222A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302FABF624AF87FA00F5222A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		302FABD024AF87F900F5222A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302FABDC24AF87F900F5222A /* ViewController.swift in Sources */,
+				302FABD824AF87F900F5222A /* AppDelegate.swift in Sources */,
+				302FABE224AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302FABE924AF87FA00F5222A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302FABF224AF87FA00F5222A /* Heady_Ecommerce_Demo_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		302FABF424AF87FA00F5222A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302FABFD24AF87FA00F5222A /* Heady_Ecommerce_Demo_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		302FABEF24AF87FA00F5222A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 302FABD324AF87F900F5222A /* Heady Ecommerce Demo App */;
+			targetProxy = 302FABEE24AF87FA00F5222A /* PBXContainerItemProxy */;
+		};
+		302FABFA24AF87FA00F5222A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 302FABD324AF87F900F5222A /* Heady Ecommerce Demo App */;
+			targetProxy = 302FABF924AF87FA00F5222A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		302FABDD24AF87F900F5222A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				302FABDE24AF87F900F5222A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		302FABE524AF87FA00F5222A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				302FABE624AF87FA00F5222A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		302FABFF24AF87FA00F5222A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		302FAC0024AF87FA00F5222A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		302FAC0224AF87FA00F5222A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Heady Ecommerce Demo App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pranay.Heady-Ecommerce-Demo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		302FAC0324AF87FA00F5222A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Heady Ecommerce Demo App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pranay.Heady-Ecommerce-Demo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		302FAC0524AF87FA00F5222A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Heady Ecommerce Demo AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pranay.Heady-Ecommerce-Demo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heady Ecommerce Demo App.app/Heady Ecommerce Demo App";
+			};
+			name = Debug;
+		};
+		302FAC0624AF87FA00F5222A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Heady Ecommerce Demo AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pranay.Heady-Ecommerce-Demo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Heady Ecommerce Demo App.app/Heady Ecommerce Demo App";
+			};
+			name = Release;
+		};
+		302FAC0824AF87FA00F5222A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Heady Ecommerce Demo AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pranay.Heady-Ecommerce-Demo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Heady Ecommerce Demo App";
+			};
+			name = Debug;
+		};
+		302FAC0924AF87FA00F5222A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Heady Ecommerce Demo AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pranay.Heady-Ecommerce-Demo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Heady Ecommerce Demo App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		302FABCF24AF87F900F5222A /* Build configuration list for PBXProject "Heady Ecommerce Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302FABFF24AF87FA00F5222A /* Debug */,
+				302FAC0024AF87FA00F5222A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		302FAC0124AF87FA00F5222A /* Build configuration list for PBXNativeTarget "Heady Ecommerce Demo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302FAC0224AF87FA00F5222A /* Debug */,
+				302FAC0324AF87FA00F5222A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		302FAC0424AF87FA00F5222A /* Build configuration list for PBXNativeTarget "Heady Ecommerce Demo AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302FAC0524AF87FA00F5222A /* Debug */,
+				302FAC0624AF87FA00F5222A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		302FAC0724AF87FA00F5222A /* Build configuration list for PBXNativeTarget "Heady Ecommerce Demo AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				302FAC0824AF87FA00F5222A /* Debug */,
+				302FAC0924AF87FA00F5222A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		302FABE024AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				302FABE124AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodel */,
+			);
+			currentVersion = 302FABE124AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodel */;
+			path = Heady_Ecommerce_Demo_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 302FABCC24AF87F900F5222A /* Project object */;
+}
