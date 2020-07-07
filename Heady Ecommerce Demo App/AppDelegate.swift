@@ -11,11 +11,18 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow()
+              window?.makeKeyAndVisible()
+             
+              let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+              let vc = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+               let mainVc = UINavigationController(rootViewController: vc)
+              window?.rootViewController = mainVc
         return true
     }
 

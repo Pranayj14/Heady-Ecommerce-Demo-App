@@ -3,19 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		13EDD9C2723177F0A4F41661 /* Pods_Heady_Ecommerce_Demo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC306BEABF46BED17F67912A /* Pods_Heady_Ecommerce_Demo_App.framework */; };
+		300A88A424B2029300572419 /* SubCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A889C24B2029200572419 /* SubCategory+CoreDataClass.swift */; };
+		300A88A524B2029300572419 /* SubCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A889D24B2029200572419 /* SubCategory+CoreDataProperties.swift */; };
+		300A88A624B2029300572419 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A889E24B2029200572419 /* Category+CoreDataClass.swift */; };
+		300A88A724B2029300572419 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A889F24B2029200572419 /* Category+CoreDataProperties.swift */; };
+		300A88A824B2029300572419 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A88A024B2029300572419 /* Product+CoreDataClass.swift */; };
+		300A88A924B2029300572419 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A88A124B2029300572419 /* Product+CoreDataProperties.swift */; };
+		300A88AA24B2029300572419 /* Ranking+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A88A224B2029300572419 /* Ranking+CoreDataClass.swift */; };
+		300A88AB24B2029300572419 /* Ranking+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A88A324B2029300572419 /* Ranking+CoreDataProperties.swift */; };
 		302FABD824AF87F900F5222A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABD724AF87F900F5222A /* AppDelegate.swift */; };
-		302FABDC24AF87F900F5222A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABDB24AF87F900F5222A /* ViewController.swift */; };
+		302FABDC24AF87F900F5222A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABDB24AF87F900F5222A /* HomeViewController.swift */; };
 		302FABDF24AF87F900F5222A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302FABDD24AF87F900F5222A /* Main.storyboard */; };
 		302FABE224AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 302FABE024AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodeld */; };
 		302FABE424AF87FA00F5222A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 302FABE324AF87FA00F5222A /* Assets.xcassets */; };
 		302FABE724AF87FA00F5222A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302FABE524AF87FA00F5222A /* LaunchScreen.storyboard */; };
 		302FABF224AF87FA00F5222A /* Heady_Ecommerce_Demo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABF124AF87FA00F5222A /* Heady_Ecommerce_Demo_AppTests.swift */; };
 		302FABFD24AF87FA00F5222A /* Heady_Ecommerce_Demo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABFC24AF87FA00F5222A /* Heady_Ecommerce_Demo_AppUITests.swift */; };
+		302FAC0E24AF947600F5222A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FAC0D24AF947600F5222A /* Services.swift */; };
+		302FAC1024AF950000F5222A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302FAC0F24AF950000F5222A /* CoreData.framework */; };
+		3071C7A024B4A7B000C565C3 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071C79F24B4A7B000C565C3 /* ProductsViewController.swift */; };
+		30A5F8FA24B4919E00611768 /* SubCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A5F8F924B4919E00611768 /* SubCategoryViewController.swift */; };
 		9B277FEC8C3BF69C674D2BC8 /* Pods_Heady_Ecommerce_Demo_App_Heady_Ecommerce_Demo_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B925395C8551033974E41CEB /* Pods_Heady_Ecommerce_Demo_App_Heady_Ecommerce_Demo_AppUITests.framework */; };
 		FF6E8D62685BAD53E26A21D4 /* Pods_Heady_Ecommerce_Demo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1807ABB0CDAA7FA8BAF67795 /* Pods_Heady_Ecommerce_Demo_AppTests.framework */; };
 /* End PBXBuildFile section */
@@ -41,9 +53,17 @@
 		14B4883542F73EB4DB1FF864 /* Pods-Heady Ecommerce Demo AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heady Ecommerce Demo AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Heady Ecommerce Demo AppTests/Pods-Heady Ecommerce Demo AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1807ABB0CDAA7FA8BAF67795 /* Pods_Heady_Ecommerce_Demo_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heady_Ecommerce_Demo_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1D2A05599B369ADA618813 /* Pods-Heady Ecommerce Demo AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heady Ecommerce Demo AppTests.release.xcconfig"; path = "Target Support Files/Pods-Heady Ecommerce Demo AppTests/Pods-Heady Ecommerce Demo AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		300A889C24B2029200572419 /* SubCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		300A889D24B2029200572419 /* SubCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		300A889E24B2029200572419 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		300A889F24B2029200572419 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		300A88A024B2029300572419 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		300A88A124B2029300572419 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		300A88A224B2029300572419 /* Ranking+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ranking+CoreDataClass.swift"; sourceTree = "<group>"; };
+		300A88A324B2029300572419 /* Ranking+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ranking+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		302FABD424AF87F900F5222A /* Heady Ecommerce Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heady Ecommerce Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		302FABD724AF87F900F5222A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		302FABDB24AF87F900F5222A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		302FABDB24AF87F900F5222A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		302FABDE24AF87F900F5222A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		302FABE124AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Heady_Ecommerce_Demo_App.xcdatamodel; sourceTree = "<group>"; };
 		302FABE324AF87FA00F5222A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +75,10 @@
 		302FABF824AF87FA00F5222A /* Heady Ecommerce Demo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Heady Ecommerce Demo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		302FABFC24AF87FA00F5222A /* Heady_Ecommerce_Demo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heady_Ecommerce_Demo_AppUITests.swift; sourceTree = "<group>"; };
 		302FABFE24AF87FA00F5222A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		302FAC0D24AF947600F5222A /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		302FAC0F24AF950000F5222A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3071C79F24B4A7B000C565C3 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		30A5F8F924B4919E00611768 /* SubCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryViewController.swift; sourceTree = "<group>"; };
 		71501ADC0F7832EBE67CAB6A /* Pods-Heady Ecommerce Demo App-Heady Ecommerce Demo AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heady Ecommerce Demo App-Heady Ecommerce Demo AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Heady Ecommerce Demo App-Heady Ecommerce Demo AppUITests/Pods-Heady Ecommerce Demo App-Heady Ecommerce Demo AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B925395C8551033974E41CEB /* Pods_Heady_Ecommerce_Demo_App_Heady_Ecommerce_Demo_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heady_Ecommerce_Demo_App_Heady_Ecommerce_Demo_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBD5ED84872561EDEC446B9 /* Pods-Heady Ecommerce Demo App-Heady Ecommerce Demo AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heady Ecommerce Demo App-Heady Ecommerce Demo AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Heady Ecommerce Demo App-Heady Ecommerce Demo AppUITests/Pods-Heady Ecommerce Demo App-Heady Ecommerce Demo AppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13EDD9C2723177F0A4F41661 /* Pods_Heady_Ecommerce_Demo_App.framework in Frameworks */,
+				302FAC1024AF950000F5222A /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,8 +141,19 @@
 		302FABD624AF87F900F5222A /* Heady Ecommerce Demo App */ = {
 			isa = PBXGroup;
 			children = (
+				300A889C24B2029200572419 /* SubCategory+CoreDataClass.swift */,
+				300A889D24B2029200572419 /* SubCategory+CoreDataProperties.swift */,
+				300A889E24B2029200572419 /* Category+CoreDataClass.swift */,
+				300A889F24B2029200572419 /* Category+CoreDataProperties.swift */,
+				300A88A024B2029300572419 /* Product+CoreDataClass.swift */,
+				300A88A124B2029300572419 /* Product+CoreDataProperties.swift */,
+				300A88A224B2029300572419 /* Ranking+CoreDataClass.swift */,
+				300A88A324B2029300572419 /* Ranking+CoreDataProperties.swift */,
+				302FAC0C24AF946300F5222A /* Services */,
 				302FABD724AF87F900F5222A /* AppDelegate.swift */,
-				302FABDB24AF87F900F5222A /* ViewController.swift */,
+				302FABDB24AF87F900F5222A /* HomeViewController.swift */,
+				30A5F8F924B4919E00611768 /* SubCategoryViewController.swift */,
+				3071C79F24B4A7B000C565C3 /* ProductsViewController.swift */,
 				302FABDD24AF87F900F5222A /* Main.storyboard */,
 				302FABE324AF87FA00F5222A /* Assets.xcassets */,
 				302FABE524AF87FA00F5222A /* LaunchScreen.storyboard */,
@@ -145,9 +181,18 @@
 			path = "Heady Ecommerce Demo AppUITests";
 			sourceTree = "<group>";
 		};
+		302FAC0C24AF946300F5222A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				302FAC0D24AF947600F5222A /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C19EF0D804672CE370FB6851 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				302FAC0F24AF950000F5222A /* CoreData.framework */,
 				FC306BEABF46BED17F67912A /* Pods_Heady_Ecommerce_Demo_App.framework */,
 				B925395C8551033974E41CEB /* Pods_Heady_Ecommerce_Demo_App_Heady_Ecommerce_Demo_AppUITests.framework */,
 				1807ABB0CDAA7FA8BAF67795 /* Pods_Heady_Ecommerce_Demo_AppTests.framework */,
@@ -165,7 +210,6 @@
 				14B4883542F73EB4DB1FF864 /* Pods-Heady Ecommerce Demo AppTests.debug.xcconfig */,
 				1A1D2A05599B369ADA618813 /* Pods-Heady Ecommerce Demo AppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -408,9 +452,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				302FABDC24AF87F900F5222A /* ViewController.swift in Sources */,
+				300A88A924B2029300572419 /* Product+CoreDataProperties.swift in Sources */,
+				302FABDC24AF87F900F5222A /* HomeViewController.swift in Sources */,
+				3071C7A024B4A7B000C565C3 /* ProductsViewController.swift in Sources */,
+				302FAC0E24AF947600F5222A /* Services.swift in Sources */,
+				300A88A624B2029300572419 /* Category+CoreDataClass.swift in Sources */,
+				300A88AB24B2029300572419 /* Ranking+CoreDataProperties.swift in Sources */,
+				300A88A524B2029300572419 /* SubCategory+CoreDataProperties.swift in Sources */,
 				302FABD824AF87F900F5222A /* AppDelegate.swift in Sources */,
+				300A88A824B2029300572419 /* Product+CoreDataClass.swift in Sources */,
+				300A88AA24B2029300572419 /* Ranking+CoreDataClass.swift in Sources */,
 				302FABE224AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodeld in Sources */,
+				30A5F8FA24B4919E00611768 /* SubCategoryViewController.swift in Sources */,
+				300A88A424B2029300572419 /* SubCategory+CoreDataClass.swift in Sources */,
+				300A88A724B2029300572419 /* Category+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +640,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YAY9KECB9J;
 				INFOPLIST_FILE = "Heady Ecommerce Demo App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -603,7 +660,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YAY9KECB9J;
 				INFOPLIST_FILE = "Heady Ecommerce Demo App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

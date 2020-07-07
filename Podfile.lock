@@ -1,16 +1,25 @@
 PODS:
   - Alamofire (5.2.1)
+  - RetrofireSwift (0.3.1):
+    - Alamofire
+    - SourceryForRetrofire (= 0.16.0-sfr-6)
+  - SourceryForRetrofire (0.16.0-sfr-6)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - RetrofireSwift (= 0.3.1)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - RetrofireSwift
+    - SourceryForRetrofire
 
 SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  RetrofireSwift: 54c49bfbaad2e6ed361297a135e60f44eb9b4117
+  SourceryForRetrofire: 1430840a10403d89165b29543a64f4c979278f4a
 
-PODFILE CHECKSUM: e277b67d844e36d9c667d163b1d42aca257affd5
+PODFILE CHECKSUM: 7a434d35cf6ea282288e5133e38ea20298dbdf25
 
 COCOAPODS: 1.8.4
