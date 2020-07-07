@@ -6,8 +6,6 @@ target 'Heady Ecommerce Demo App' do
   use_frameworks!
 
   # Pods for Heady Ecommerce Demo App
-	pod 'Alamofire', '~> 5.2'
-	pod 'RetrofireSwift', '0.3.1'
 
   target 'Heady Ecommerce Demo AppTests' do
     inherit! :search_paths

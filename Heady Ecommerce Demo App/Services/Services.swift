@@ -7,33 +7,27 @@
 //
 
 import Foundation
-import Alamofire
 
 class Services {
-      var array = [String:Any]()
-    var userDefaults = UserDefaults.standard
-    typealias JSON = NSArray
-    typealias JSONHandler = (JSON?, HTTPURLResponse?, Error?) -> Void
-//    var error = errorResponse
-//MARK: api call to get post api response
- func getApiResponseGetMethod(apiUrl: String, completion: @escaping JSONHandler){
-//     let jsonObjectFailed : [String:Any] = errorResponse(message: "Server Side Error")
-     DispatchQueue.main.async {
-         
-//         let postHeaders: HTTPHeaders = ["Content-Type": "application/json"]
-        print(apiUrl)
-        AF.request(apiUrl, encoding: JSONEncoding.default).responseJSON { response in
-            print(response)
-            switch response.result{
-            case .success:
-                let jsonArray =  response.value as! NSArray
-                let JSON = jsonArray
-                completion(JSON,response.response,response.error)
-            case .failure:
-                completion(nil,response.response,response.error)
+    typealias JSONHandler = (AnyObject?, HTTPURLResponse,Error?) -> Void
+    
+    //MARK: api call to get post api response
+    func getApiResponseGetMethod(apiUrl: String, completion: @escaping JSONHandler){
+        DispatchQueue.main.async {
+            let url = URL(string:apiUrl)!
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                guard let data = data else { print(error!); return }
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data) as AnyObject
+                    DispatchQueue.main.async {
+                        completion(json,response as! HTTPURLResponse,error)
+                    }
+                    
+                } catch {
+                    print(error)
+                }
             }
-         
-         }
-     }
- }
+            task.resume()
+        }
+    }
 }
