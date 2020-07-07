@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 class SubCategoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     
     @IBOutlet weak var subCategoryTableView: UITableView!
     var subCategoryIds = [AnyObject]()
@@ -41,10 +41,10 @@ class SubCategoryViewController: UIViewController, UITableViewDataSource, UITabl
             print("Couldn't fetch results")
             
         }
-            // Do any additional setup after loading the view.
-        }
-        
-        
+        // Do any additional setup after loading the view.
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return subCategoryArray.count
     }
@@ -56,19 +56,23 @@ class SubCategoryViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyBoard.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+        vc.procuctsIds = subCategoryArray[indexPath.row].value(forKey: "childCategory") as? [AnyObject] ?? []
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
-        
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 class SubCategoryTableViewCell: UITableViewCell{

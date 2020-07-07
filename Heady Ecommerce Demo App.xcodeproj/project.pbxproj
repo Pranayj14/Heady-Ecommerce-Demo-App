@@ -8,14 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		13EDD9C2723177F0A4F41661 /* Pods_Heady_Ecommerce_Demo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC306BEABF46BED17F67912A /* Pods_Heady_Ecommerce_Demo_App.framework */; };
-		300A88A424B2029300572419 /* SubCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A889C24B2029200572419 /* SubCategory+CoreDataClass.swift */; };
-		300A88A524B2029300572419 /* SubCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A889D24B2029200572419 /* SubCategory+CoreDataProperties.swift */; };
-		300A88A624B2029300572419 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A889E24B2029200572419 /* Category+CoreDataClass.swift */; };
-		300A88A724B2029300572419 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A889F24B2029200572419 /* Category+CoreDataProperties.swift */; };
-		300A88A824B2029300572419 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A88A024B2029300572419 /* Product+CoreDataClass.swift */; };
-		300A88A924B2029300572419 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A88A124B2029300572419 /* Product+CoreDataProperties.swift */; };
-		300A88AA24B2029300572419 /* Ranking+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A88A224B2029300572419 /* Ranking+CoreDataClass.swift */; };
-		300A88AB24B2029300572419 /* Ranking+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A88A324B2029300572419 /* Ranking+CoreDataProperties.swift */; };
 		302FABD824AF87F900F5222A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABD724AF87F900F5222A /* AppDelegate.swift */; };
 		302FABDC24AF87F900F5222A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302FABDB24AF87F900F5222A /* HomeViewController.swift */; };
 		302FABDF24AF87F900F5222A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302FABDD24AF87F900F5222A /* Main.storyboard */; };
@@ -53,14 +45,6 @@
 		14B4883542F73EB4DB1FF864 /* Pods-Heady Ecommerce Demo AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heady Ecommerce Demo AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Heady Ecommerce Demo AppTests/Pods-Heady Ecommerce Demo AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1807ABB0CDAA7FA8BAF67795 /* Pods_Heady_Ecommerce_Demo_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heady_Ecommerce_Demo_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1D2A05599B369ADA618813 /* Pods-Heady Ecommerce Demo AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heady Ecommerce Demo AppTests.release.xcconfig"; path = "Target Support Files/Pods-Heady Ecommerce Demo AppTests/Pods-Heady Ecommerce Demo AppTests.release.xcconfig"; sourceTree = "<group>"; };
-		300A889C24B2029200572419 /* SubCategory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
-		300A889D24B2029200572419 /* SubCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SubCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		300A889E24B2029200572419 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
-		300A889F24B2029200572419 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		300A88A024B2029300572419 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
-		300A88A124B2029300572419 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		300A88A224B2029300572419 /* Ranking+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ranking+CoreDataClass.swift"; sourceTree = "<group>"; };
-		300A88A324B2029300572419 /* Ranking+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ranking+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		302FABD424AF87F900F5222A /* Heady Ecommerce Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heady Ecommerce Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		302FABD724AF87F900F5222A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		302FABDB24AF87F900F5222A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -141,14 +125,6 @@
 		302FABD624AF87F900F5222A /* Heady Ecommerce Demo App */ = {
 			isa = PBXGroup;
 			children = (
-				300A889C24B2029200572419 /* SubCategory+CoreDataClass.swift */,
-				300A889D24B2029200572419 /* SubCategory+CoreDataProperties.swift */,
-				300A889E24B2029200572419 /* Category+CoreDataClass.swift */,
-				300A889F24B2029200572419 /* Category+CoreDataProperties.swift */,
-				300A88A024B2029300572419 /* Product+CoreDataClass.swift */,
-				300A88A124B2029300572419 /* Product+CoreDataProperties.swift */,
-				300A88A224B2029300572419 /* Ranking+CoreDataClass.swift */,
-				300A88A324B2029300572419 /* Ranking+CoreDataProperties.swift */,
 				302FAC0C24AF946300F5222A /* Services */,
 				302FABD724AF87F900F5222A /* AppDelegate.swift */,
 				302FABDB24AF87F900F5222A /* HomeViewController.swift */,
@@ -452,20 +428,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				300A88A924B2029300572419 /* Product+CoreDataProperties.swift in Sources */,
 				302FABDC24AF87F900F5222A /* HomeViewController.swift in Sources */,
 				3071C7A024B4A7B000C565C3 /* ProductsViewController.swift in Sources */,
 				302FAC0E24AF947600F5222A /* Services.swift in Sources */,
-				300A88A624B2029300572419 /* Category+CoreDataClass.swift in Sources */,
-				300A88AB24B2029300572419 /* Ranking+CoreDataProperties.swift in Sources */,
-				300A88A524B2029300572419 /* SubCategory+CoreDataProperties.swift in Sources */,
 				302FABD824AF87F900F5222A /* AppDelegate.swift in Sources */,
-				300A88A824B2029300572419 /* Product+CoreDataClass.swift in Sources */,
-				300A88AA24B2029300572419 /* Ranking+CoreDataClass.swift in Sources */,
 				302FABE224AF87F900F5222A /* Heady_Ecommerce_Demo_App.xcdatamodeld in Sources */,
 				30A5F8FA24B4919E00611768 /* SubCategoryViewController.swift in Sources */,
-				300A88A424B2029300572419 /* SubCategory+CoreDataClass.swift in Sources */,
-				300A88A724B2029300572419 /* Category+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
