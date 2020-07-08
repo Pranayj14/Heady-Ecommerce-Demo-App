@@ -50,7 +50,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                             
                             if(products.count > 0){
                                 for j in 0...products.count - 1{
-                                    CoreDataModel.init().addDataForEntityAttributes(dict: categories[i] as! NSDictionary, childArray: products[j] as! NSDictionary, entityName: "Product")
+                                    CoreDataModel.init().addDataForEntityAttributes(dict: categories[i] as! NSDictionary, dict2: products[j] as! NSDictionary, entityName: "Product")
                                 }
                             }
                             
@@ -76,11 +76,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                         }
                         if(self.addCategorySubCategory == true){
                             if(self.addProduct == false){
-                                CoreDataModel.init().addDataForEntityAttributes(dict: categories[i] as! NSDictionary, childArray: [:], entityName: "SubCategory")
+                                CoreDataModel.init().addDataForEntityAttributes(dict: categories[i] as! NSDictionary, dict2: [:], entityName: "SubCategory")
                             }
                         }else{
                             self.addProduct = false
-                            CoreDataModel.init().addDataForEntityAttributes(dict: categories[i] as! NSDictionary, childArray: [:], entityName: "Category")
+                            CoreDataModel.init().addDataForEntityAttributes(dict: categories[i] as! NSDictionary, dict2: [:], entityName: "Category")
                         }
                     }
                 }
@@ -89,7 +89,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                         if let products = ranking[i]["products"] as? [AnyObject]{
                             if(products.count > 0){
                                 for j in 0...products.count - 1{
-                                    CoreDataModel.init().addDataForEntityAttributes(dict: ranking[i] as! NSDictionary, childArray: products[j] as! NSDictionary, entityName: "Ranking")
+                                    CoreDataModel.init().addDataForEntityAttributes(dict: ranking[i] as! NSDictionary, dict2: products[j] as! NSDictionary, entityName: "Ranking")
                                 }
                             }
                         }

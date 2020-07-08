@@ -14,15 +14,15 @@ class CoreDataModel{
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     // MARK: - Save data in particular attribute of an entity of every object.
-    func addDataForEntityAttributes(dict: NSDictionary,childArray: NSDictionary, entityName: String) {
+    func addDataForEntityAttributes(dict: NSDictionary,dict2: NSDictionary, entityName: String) {
         let context = self.appDelegate.persistentContainer.viewContext
         let entity = NSEntityDescription.insertNewObject(forEntityName: entityName, into: context)
         if(entityName == "Product"){
             entity.setValue(dict["id"] as? Int32 ?? 0, forKey: "id")
-            entity.setValue(childArray["id"] as? Int32 ?? 0, forKey: "productId")
-            entity.setValue(childArray["name"] as? String ?? "", forKey: "productName")
+            entity.setValue(dict2["id"] as? Int32 ?? 0, forKey: "productId")
+            entity.setValue(dict2["name"] as? String ?? "", forKey: "productName")
             entity.setValue(dict["name"] as? String ?? "", forKey: "name")
-            entity.setValue(childArray["date_added"] as? String ?? "", forKey: "date")
+            entity.setValue(dict2["date_added"] as? String ?? "", forKey: "date")
             do {
                 let context = self.appDelegate.persistentContainer.viewContext
                 try context.save()
@@ -53,16 +53,16 @@ class CoreDataModel{
         }else{
             let rankingName = dict["ranking"] as? String ?? ""
             entity.setValue(dict["ranking"] as? String ?? "", forKey: "productRanking")
-            entity.setValue(childArray["id"] as? Int32 ?? 0, forKey: "id")
+            entity.setValue(dict2["id"] as? Int32 ?? 0, forKey: "id")
             if rankingName == "Most Viewed Products" {
-                entity.setValue(childArray["view_count"] as? Int32 ?? 0, forKey: "count")
+                entity.setValue(dict2["view_count"] as? Int32 ?? 0, forKey: "count")
             }else if rankingName == "Most OrdeRed Products" {
-                entity.setValue(childArray["order_count"] as? Int32 ?? 0, forKey: "count")
+                entity.setValue(dict2["order_count"] as? Int32 ?? 0, forKey: "count")
             }else {
-                entity.setValue(childArray["shares"] as? Int32 ?? 0, forKey: "count")
+                entity.setValue(dict2["shares"] as? Int32 ?? 0, forKey: "count")
             }
             let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Product")
-            request.predicate = NSPredicate(format: "productId = %d", childArray["id"] as? Int ?? 0)
+            request.predicate = NSPredicate(format: "productId = %d", dict2["id"] as? Int ?? 0)
             request.returnsObjectsAsFaults = false
             do {
                 let results = try context.fetch(request)
