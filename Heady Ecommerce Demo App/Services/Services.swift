@@ -19,7 +19,7 @@ class Services {
                 guard let data = data,error == nil else {  completion([] as AnyObject,response,error); return }
                 do {
                     let json = try JSONSerialization.jsonObject(with: data) as AnyObject
-                    completion(json,response as! HTTPURLResponse,error)
+                    completion(json,response,error)
                 } catch {
                     completion([] as AnyObject,response,error)
                 }
