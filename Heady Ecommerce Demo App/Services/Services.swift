@@ -9,22 +9,19 @@
 import Foundation
 
 class Services {
-    typealias JSONHandler = (AnyObject?, HTTPURLResponse,Error?) -> Void
+    typealias JSONHandler = (AnyObject?, URLResponse? ,Error?) -> Void
     
     //MARK: api call to get post api response
     func getApiResponseGetMethod(apiUrl: String, completion: @escaping JSONHandler){
         DispatchQueue.main.async {
             let url = URL(string:apiUrl)!
             let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                guard let data = data else { print(error!); return }
+                guard let data = data,error == nil else {  completion([] as AnyObject,response,error); return }
                 do {
                     let json = try JSONSerialization.jsonObject(with: data) as AnyObject
-                    DispatchQueue.main.async {
-                        completion(json,response as! HTTPURLResponse,error)
-                    }
-                    
+                    completion(json,response as! HTTPURLResponse,error)
                 } catch {
-                    print(error)
+                    completion([] as AnyObject,response,error)
                 }
             }
             task.resume()

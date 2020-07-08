@@ -22,19 +22,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.title = "Heady Ecommerce App"
         // MARK: - Api Call to get data.
         Services.init().getApiResponseGetMethod(apiUrl: "https://stark-spire-93433.herokuapp.com/json") { json, resoponse, error in
-            CoreDataModel.init().clearData(entityName:"Category")
-            CoreDataModel.init().clearData(entityName:"SubCategory")
-            CoreDataModel.init().clearData(entityName:"Product")
-            CoreDataModel.init().clearData(entityName: "Ranking")
-            guard let json = json else {    DispatchQueue.main.async {
-                let alert = UIAlertController(title: "", message: "Check your internet connection or contact the Administrator.", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (UIAlertAction) in
-                    
-                }))
-                self.present(alert, animated: false, completion: nil)
+            
+            guard let json = json,error == nil else {    DispatchQueue.main.async {
+                self.fetchCategoryData()
                 }; return }
             
             DispatchQueue.main.async {
+                CoreDataModel.init().clearData(entityName:"Category")
+                CoreDataModel.init().clearData(entityName:"SubCategory")
+                CoreDataModel.init().clearData(entityName:"Product")
+                CoreDataModel.init().clearData(entityName: "Ranking")
                 if let categories : [AnyObject] = ((json as AnyObject).value(forKey: "categories") as AnyObject).mutableCopy() as? [AnyObject] {
                     for i in 0...categories.count - 1{
                         if let childCategories = categories[i]["child_categories"] as? [AnyObject]{
